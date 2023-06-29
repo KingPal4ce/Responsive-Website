@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WB Website</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made for Developers</h1>
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2>Username:</h2>
+                        <input type="text" class="inputbox" name="username" placeholder="Enter Username">
+                        <h2>Password:</h2>
+                        <input type="password" class="inputbox" name="password" placeholder="Enter Password">
+                        <input type="submit" class="inputbox" name="sub" value="Sign In">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <div class="videoContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d4Zb4f4rnL4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section-2-Header">Being here, What can we do?</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="Chat with me.png" alt="chess">
+                    </div>
+                    <label>Chat with Me!</label>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consequatur laboriosam
+                        impedit, voluptas reiciendis provident.</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="Learn to code.png" alt="chess">
+                    </div>
+                    <label>Learn to Code!</label>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consequatur laboriosam
+                        impedit, voluptas reiciendis provident.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="Build an empire.png" alt="chess">
+                    </div>
+                    <label>Build an Empire!</label>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consequatur laboriosam
+                        impedit, voluptas reiciendis provident.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnMore">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:95%; height: 5px; margin: auto; background-color: grey; border-radius: 7px;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <h1>Join Us Now!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore nihil consectetur fugit,
+                        illum animi alias, adipisci, vero placeat vitae repudiandae voluptatum ipsa magni accusantium
+                        iure
+                        quo eligendi necessitatibus et?</p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="artIcon">
+                    <img src="Join us.png" alt="Chess">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Products</h1>
+                <ul>
+                    <li>Computers</li>
+                    <li>iPads</li>
+                    <li>iPhones</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Learn More</h1>
+                <ul>
+                    <li>Developers</li>
+                    <li>Designers</li>
+                    <li>Hackers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Support</h1>
+                <ul>
+                    <li>Help</li>
+                    <li>QA</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // change topnav to topnav.responsive
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
